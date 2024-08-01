@@ -18,6 +18,27 @@ struct CardView: View {
             }
         })
     }
+    
+    @ViewBuilder
+    
+    private var cardShape: some View {
+        switch card.shape {
+        case .diamond:
+            switch card.shading {
+            case .solid:
+                Diamond()
+            case .striped:
+                <#code#>
+            case .outlined:
+                <#code#>
+            }
+        case .oval:
+            <#code#>
+        case .squiggle:
+            <#code#>
+        }
+        
+    }
 }
 
 #Preview {
