@@ -14,22 +14,22 @@ struct Card {
     let color: CardColor
     let numberOfShape: Int
     let shading: CardShading
-    var isMatched: Bool?
+    var isSet: Bool?
     var isSelected: Bool = false
 
-    enum CardShape {
+    enum CardShape: CaseIterable {
         case diamond
         case oval
         case squiggle
     }
 
-    enum CardColor {
+    enum CardColor: CaseIterable {
         case red
         case purple
         case green
     }
 
-    enum CardShading {
+    enum CardShading: CaseIterable {
         case solid
         case striped
         case outlined

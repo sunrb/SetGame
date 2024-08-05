@@ -17,6 +17,9 @@
 		4F911B862C5C05DB00EB7C7B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B852C5C05DB00EB7C7B /* Card.swift */; };
 		4F911B882C5C10BB00EB7C7B /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B872C5C10BB00EB7C7B /* AspectVGrid.swift */; };
 		4F911B8A2C5C46BD00EB7C7B /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B892C5C46BD00EB7C7B /* Diamond.swift */; };
+		4F911B8D2C5D58E700EB7C7B /* Squiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B8C2C5D58E700EB7C7B /* Squiggle.swift */; };
+		4F911B8F2C5D8AD700EB7C7B /* FirstSetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B8E2C5D8AD700EB7C7B /* FirstSetGame.swift */; };
+		4F911B912C5D8AF900EB7C7B /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F911B902C5D8AF900EB7C7B /* SetGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		4F911B852C5C05DB00EB7C7B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4F911B872C5C10BB00EB7C7B /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		4F911B892C5C46BD00EB7C7B /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		4F911B8C2C5D58E700EB7C7B /* Squiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squiggle.swift; sourceTree = "<group>"; };
+		4F911B8E2C5D8AD700EB7C7B /* FirstSetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSetGame.swift; sourceTree = "<group>"; };
+		4F911B902C5D8AF900EB7C7B /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 				4F911B852C5C05DB00EB7C7B /* Card.swift */,
 				4F911B872C5C10BB00EB7C7B /* AspectVGrid.swift */,
 				4F911B5D2C5C02CC00EB7C7B /* CardView.swift */,
+				4F911B902C5D8AF900EB7C7B /* SetGame.swift */,
+				4F911B8E2C5D8AD700EB7C7B /* FirstSetGame.swift */,
 				4F911B5F2C5C02CD00EB7C7B /* Assets.xcassets */,
 				4F911B612C5C02CD00EB7C7B /* Preview Content */,
 			);
@@ -140,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				4F911B892C5C46BD00EB7C7B /* Diamond.swift */,
+				4F911B8C2C5D58E700EB7C7B /* Squiggle.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -274,10 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F911B8D2C5D58E700EB7C7B /* Squiggle.swift in Sources */,
 				4F911B882C5C10BB00EB7C7B /* AspectVGrid.swift in Sources */,
 				4F911B862C5C05DB00EB7C7B /* Card.swift in Sources */,
 				4F911B5E2C5C02CC00EB7C7B /* CardView.swift in Sources */,
 				4F911B8A2C5C46BD00EB7C7B /* Diamond.swift in Sources */,
+				4F911B8F2C5D8AD700EB7C7B /* FirstSetGame.swift in Sources */,
+				4F911B912C5D8AF900EB7C7B /* SetGame.swift in Sources */,
 				4F911B5C2C5C02CC00EB7C7B /* SetGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

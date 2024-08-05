@@ -13,9 +13,9 @@ struct AspectVGrid<Item, ItemView>: View where ItemView: View, Item: Identifiabl
     var content: (Item) -> ItemView
     
     init(items: [Item], aspectRatio: CGFloat, @ViewBuilder content: @escaping (Item) -> ItemView) {
-        self.items = items
-        self.aspectRatio = aspectRatio
-        self.content = content
+        self.items          = items
+        self.aspectRatio    = aspectRatio
+        self.content        = content
     }
     
     var body: some View {
@@ -54,8 +54,8 @@ struct AspectVGrid<Item, ItemView>: View where ItemView: View, Item: Identifiabl
         var rowCount = itemCount
         
         repeat {
-            let itemWidth = size.width / CGFloat(columnCount)
-            let itemHeight = itemWidth / itemAspectRatio
+            let itemWidth   = size.width / CGFloat(columnCount)
+            let itemHeight  = itemWidth / itemAspectRatio
             
             if CGFloat(rowCount) * itemHeight < size.height {
                 break
