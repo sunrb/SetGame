@@ -24,7 +24,7 @@ struct CardView: View {
                             .frame(width: geometry.size.width/2, height: geometry.size.height/6)
                     }
                 }.foregroundColor(cardColor)
-                if card.isSelected {
+                if card.isChosen {
                     shape.foregroundColor(.gray).opacity(0.5)
                 }
                 if let isMatched = card.isSet {
@@ -84,9 +84,3 @@ struct CardView: View {
         static let lindWidth: CGFloat = 3
     }
 }
-
-//#Preview {
-//    let card = Card(id: 1, shape: Card.CardShape.diamond, color: Card.CardColor.purple, numberOfShape: 3, shading: Card.CardShading.solid)
-//    CardView(card: card)
-//        .frame(width: 200, height: 200)
-//}

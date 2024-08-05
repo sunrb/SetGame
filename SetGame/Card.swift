@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Card {
+struct Card: Identifiable {
     
     let id: Int
     let shape: CardShape
@@ -15,7 +15,7 @@ struct Card {
     let numberOfShape: Int
     let shading: CardShading
     var isSet: Bool?
-    var isSelected: Bool = false
+    var isChosen: Bool = false
 
     enum CardShape: CaseIterable {
         case diamond

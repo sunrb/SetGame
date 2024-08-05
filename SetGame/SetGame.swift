@@ -20,7 +20,7 @@ struct SetGame {
     }
     
     private var indexOfChosen: [Int] {
-        get { table.indices.filter { table[$0].isSelected }}
+        get { table.indices.filter { table[$0].isChosen }}
     }
     
     private var isMatch: Bool {
@@ -66,7 +66,7 @@ struct SetGame {
         deck.shuffle()
         
         table = []
-        for i in 0 ..< GameConstant.numberOfCardOnTable {
+        for _ in 0 ..< GameConstant.numberOfCardOnTable {
             table.append(deck.popLast()!)
         }
     }
@@ -77,13 +77,13 @@ struct SetGame {
                 replaceNewCard()
             }
             table.indices.forEach {
-                table[$0].isSelected = false
+                table[$0].isChosen = false
                 table[$0].isSet = nil
             }
         }
         
         if let chosenIndex = table.firstIndex(where: { $0.id == card.id }) {
-            table[chosenIndex].isSelected.toggle()
+            table[chosenIndex].isChosen.toggle()
             if indexOfChosen.count == GameConstant.numberOfMatchCard {
                 let isMatch = isMatch
                 indexOfChosen.forEach( { i in
@@ -95,9 +95,9 @@ struct SetGame {
     
     private mutating func replaceNewCard() {
         indexOfChosen.reversed().forEach( { i in
-            table.remove(at: 1)
+            table.remove(at: i)
             if !deck.isEmpty {
-                table.insert(deck.popLast()!, at: 1)
+                table.insert(deck.popLast()!, at: i)
             }
         })
     }
@@ -109,7 +109,7 @@ struct SetGame {
                 return
             }
         }
-        for i in 0 ..< GameConstant.numberOfDealCard {
+        for _ in 0 ..< GameConstant.numberOfDealCard {
             table.append(deck.popLast()!)
         }
     }
