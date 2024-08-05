@@ -7,12 +7,30 @@
 
 import SwiftUI
 
-struct FirstSetGame: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class FirstSetGame: ObservableObject {
+    @Published private var model = createSetGame ()
+    
+    private static func createSetGame() -> SetGame {
+        SetGame()
     }
-}
-
-#Preview {
-    FirstSetGame()
+    
+    var deck: [Card] {
+        model.deck
+    }
+    
+    var table: [Card] {
+        model.table
+    }
+    
+    func choose(_ card: Card) {
+        model.choose(card)
+    }
+    
+    func dealThreeMoreCard() {
+        model.dealThreeMoreCard()
+    }
+    
+    func newGame() {
+        model = Self.createSetGame()
+    }
 }

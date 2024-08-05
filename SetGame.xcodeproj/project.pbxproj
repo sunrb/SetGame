@@ -107,11 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				4F911B8B2C5C46CA00EB7C7B /* Shapes */,
-				4F911B5B2C5C02CC00EB7C7B /* SetGameApp.swift */,
 				4F911B852C5C05DB00EB7C7B /* Card.swift */,
 				4F911B872C5C10BB00EB7C7B /* AspectVGrid.swift */,
 				4F911B5D2C5C02CC00EB7C7B /* CardView.swift */,
 				4F911B902C5D8AF900EB7C7B /* SetGame.swift */,
+				4F911B5B2C5C02CC00EB7C7B /* SetGameApp.swift */,
 				4F911B8E2C5D8AD700EB7C7B /* FirstSetGame.swift */,
 				4F911B5F2C5C02CD00EB7C7B /* Assets.xcassets */,
 				4F911B612C5C02CD00EB7C7B /* Preview Content */,
